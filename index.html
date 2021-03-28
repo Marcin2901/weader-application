@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Weader App 1.0</title>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+      <main>
+            <section id="mainContainer" class="weader-info">
+                  <div id="weaderSearchView" class="weader-info__search-view">
+                        <label class="weader-input__search__label" for="searchInput">Check weader</label>
+                        <input type="text" id="searchInput"> 
+                        <button id="searchButton">Search</button>
+                  </div>
+
+                  <div class="weader-info-forecast-view" id="weaderForecastView">
+                        <button id="returnToSearchBtn" class="weader-info__btn-return">return</button>
+
+                        <div class="weader-info__city">
+                              <h1 id="weaderCity"></h1>
+                              <img id="weaderIcon" src="" alt="">
+                        </div>
+
+                        <div class="weader-info__temperatures">
+                              <h2 id="weaderCurrentTemp"></h2>
+                              <p id="weaderMaxTemp"></p>
+                              <p id="weaderMinTemp"></p>
+                        </div>
+                  </div>
+            </section>
+      </main>
+      <script type="module" src="scripts/index.js"></script>
+</body>
+</html>
